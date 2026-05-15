@@ -1,4 +1,4 @@
-# 🖥️ CPU Scheduling Simulator
+# CPU Scheduling Simulator
 
 ### x86 Assembly (COAL) Semester Project
 
@@ -6,7 +6,7 @@ A console-based CPU scheduling simulator written entirely in **x86 Assembly lang
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -31,24 +31,24 @@ The simulator accepts up to **5 processes** with their arrival times, burst time
 
 ## Features
 
-- ✅ Supports up to **5 concurrent processes**
-- ✅ Interactive **menu-driven interface**
-- ✅ Real-time **Gantt chart** visualization in the console
-- ✅ Detailed **per-process metrics table** (WT, RT, TAT)
-- ✅ Computed **average statistics** (displayed as floating-point decimals)
-- ✅ Handles **CPU idle time** (gaps between process arrivals)
-- ✅ Fully implemented in **x86 Assembly** using `emu8086.inc`
+- Supports up to **5 concurrent processes**
+- Interactive **menu-driven interface**
+- Real-time **Gantt chart** visualization in the console
+- Detailed **per-process metrics table** (WT, RT, TAT)
+- Computed **average statistics** (displayed as floating-point decimals)
+- Handles **CPU idle time** (gaps between process arrivals)
+- Fully implemented in **x86 Assembly** using `emu8086.inc`
 
 ---
 
 ## Algorithms Implemented
 
-| #   | Algorithm                                        | Status            |
-| --- | ------------------------------------------------ | ----------------- |
-| 1   | **FCFS** — First Come First Served               | ✅ Implemented    |
-| 2   | **SJF** — Shortest Job First (Non-Preemptive)    | ✅ Implemented    |
-| 3   | **RR** — Round Robin (with configurable quantum) | ✅ Implemented    |
-| 4   | **PS** — Priority Scheduling                     | 🚧 Stub (planned) |
+| #   | Algorithm                                        | Status      |
+| --- | ------------------------------------------------ | ----------- |
+| 1   | **FCFS** — First Come First Served               | Implemented |
+| 2   | **SJF** — Shortest Job First (Non-Preemptive)    | Implemented |
+| 3   | **RR** — Round Robin (with configurable quantum) | Implemented |
+| 4   | **PS** — Priority Scheduling                     | Implemented |
 
 ### Algorithm Details
 
@@ -62,7 +62,7 @@ Among all processes that have arrived, the one with the shortest burst time is s
 Each process gets a configurable time quantum. Processes cycle through the ready queue, and the simulator tracks remaining burst time per process. Response time is recorded on the first execution of each process.
 
 **4. Priority Scheduling**
-_(Stub — accepts priority input but scheduling logic is pending implementation.)_
+Both premptive and non-premptive priority scheduling is implemented.
 
 ---
 
@@ -71,14 +71,12 @@ _(Stub — accepts priority input but scheduling logic is pending implementation
 ```
 COAL_PROJECT_CPU_SCHEDULING_SIMULATOR/
 │
-├── CPU SCHEDULING.asm       # Main simulator (clean version)
-├── CPU SCHEDULING.asm.txt   # Annotated/readable version of the main file
+├── CPU SCHEDULING.asm       # half done project (clean version)
+├── CPU SCHEDULING.asm.txt   # Average was converted to float point representation
+├── priorityscheduling.asm   # Addition priority scheduling module
 ├── final code.asm           # Final consolidated version
-├── priorityscheduling.asm   # Standalone priority scheduling module
 └── README.md
 ```
-
----
 
 ## Getting Started
 
@@ -209,11 +207,11 @@ Averages are computed and displayed as floating-point values (integer + two deci
 
 ---
 
-## 📄 Report
+## Report
 
 The full project report (including algorithm analysis, flowcharts, and results) is available on Overleaf:
 
-[![Overlaf_viewer_access](https://www.overleaf.com/read/jdqdtbqxsqgm#ddf0a6)]
+[![Overleaf](https://www.overleaf.com/read/jdqdtbqxsqgm#ddf0a6)]
 
 ## Authors
 
