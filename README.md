@@ -207,12 +207,6 @@ Averages are computed and displayed as floating-point values (integer + two deci
 
 ---
 
-## Report
-
-The full project report (including algorithm analysis, flowcharts, and results) is available on Overleaf:
-
-[![Overleaf](https://www.overleaf.com/read/jdqdtbqxsqgm#ddf0a6)]
-
 ## Authors
 
 Developed by **Mahnoor Naseer** and contributors as part of a COAL (Computer Organization and Assembly Language) semester project.
